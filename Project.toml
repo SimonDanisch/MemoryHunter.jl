@@ -1,0 +1,13 @@
+name = "MemoryHunter"
+uuid = "b20f5799-67b8-4080-9e94-37bf65705cc6"
+authors = ["SimonDanisch <sdanisch@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
