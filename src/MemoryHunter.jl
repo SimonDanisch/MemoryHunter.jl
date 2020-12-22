@@ -29,8 +29,5 @@ function print_sizes(threshold=5#=mb=#)
         println(var, ": ", Base.format_bytes(s))
     end
 end
-print_sizes()
-
-
 
 end
