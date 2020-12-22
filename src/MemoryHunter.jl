@@ -13,7 +13,7 @@ function print_sizes(threshold=5#=mb=#)
             for vs in names(m, all = true)
                 if isdefined(m, vs)
                     v = getfield(m, vs)
-                    if !haskey(visited, v)
+                    if !isa(v, Function) && !haskey(visited, v)
                         visited[v] = true
                         x = Base.summarysize(v)
                         if x > threshold * 10^6
